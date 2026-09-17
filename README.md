@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="day003_cover.png" alt="Habit Tracker CLI" width="720" />
+</p>
+
+---
+
 # Habit Tracker CLI
 
 A command-line habit tracking system. Create categories, register habits, log daily completions, and query compliance statistics and streaks.
