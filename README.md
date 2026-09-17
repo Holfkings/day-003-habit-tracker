@@ -1,23 +1,23 @@
 # Habit Tracker CLI
 
-Sistema de seguimiento de hábitos por línea de comandos. Crea categorías, registra hábitos, loguea ejecuciones diarias y consulta estadísticas de cumplimiento y streaks.
+A command-line habit tracking system. Create categories, register habits, log daily completions, and query compliance statistics and streaks.
 
-## Qué hace
+## What it does
 
-- Gestionar categorías de hábitos (salud, estudio, trabajo, etc.)
-- Registrar hábitos con nombre, descripción y frecuencia (diario, semanal, personalizado)
-- Loguear ejecuciones diarias
-- Ver estadísticas: tasa de cumplimiento 7d/30d, streaks (racha actual y más larga), registros por día
-- Buscar hábitos por nombre o descripción
-- Ver qué se registró hoy
+- Manage habit categories (health, study, work, etc.)
+- Register habits with name, description, and frequency (daily, weekly, custom)
+- Log daily completions
+- View statistics: 7d/30d compliance rate, streaks (current and longest), records by day
+- Search habits by name or description
+- View today's logged habits
 
 ## Stack
 
 - Python 3 (stdlib only: argparse, sqlite3, datetime)
-- SQLite para persistencia local
-- Sin dependencias externas
+- SQLite for local persistence
+- No external dependencies
 
-## Uso
+## Usage
 
 ```bash
 python habit.py --help
@@ -29,14 +29,18 @@ python habit.py today
 python habit.py streak
 ```
 
-## Persistencia
+## Persistence
 
-La base de datos se guarda en `~/.habit_tracker/habits.db` (SQLite). Se crea automáticamente al primer uso.
+The database is stored at `~/.habit_tracker/habits.db` (SQLite). It is created automatically on first use.
 
-## El proyecto
+## The Project
 
-Repo del [Reto #100Días](/../../) — día 003 de 100.
+Repo from the [100 Days Challenge](/../../) — day 003 of 100.
 
-Días previos:
-- Día 001: [day-001-k8s-deployer](https://github.com/Holfkings/day-001-k8s-deployer) — Generador de manifests K8s
-- Día 002: [day-002-notes-cli](https://github.com/Holfkings/day-002-notes-cli) — Sistema de notas CLI con SQLite
+Previous days:
+- Day 001: [day-001-k8s-deployer](https://github.com/Holfkings/day-001-k8s-deployer) — Kubernetes manifests generator
+- Day 002: [day-002-notes-cli](https://github.com/Holfkings/day-002-notes-cli) — CLI notes system with SQLite
+
+---
+
+**Author:** [@Holfkings](https://github.com/Holfkings) · Part of the [100 Days Challenge](https://github.com/Holfkings)
